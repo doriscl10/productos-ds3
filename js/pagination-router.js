@@ -1,94 +1,83 @@
 document.addEventListener("DOMContentLoaded", function () {
   // --- 1. DATOS DE LOS PRODUCTOS ---
-  // Aquí puedes añadir, editar o eliminar productos fácilmente.
+  // Lista completa de productos, incluyendo la nueva familia Deco.
   const allProducts = [
     // Adaptadores Wi-Fi
     {
       name: "Archer TX1U Nano",
       description:
         "Adaptador Wi-Fi 6 AX300 de tamaño nano. La forma más pequeña de obtener velocidades de última generación.",
-      imageUrl:
-        "images/archer-tx-1u-nano_front.jpg",
+      imageUrl: "images/archer-tx-1u-nano_front.jpg",
       productUrl: "Archer-TX1U-Nano.html",
     },
     {
       name: "Archer T2U Nano",
       description:
         "Adaptador Wi-Fi AC600 de doble banda. Conectividad compacta y conveniente para tu portátil o PC.",
-      imageUrl:
-        "images/archer-t2-unano_front.jpg",
+      imageUrl: "images/archer-t2-unano_front.jpg",
       productUrl: "ArcherT2UNano.html",
     },
     {
       name: "Archer T2UB Nano",
       description:
         "Wi-Fi 5 y Bluetooth 4.2 en un solo adaptador nano. Conectividad dual para máxima versatilidad.",
-      imageUrl:
-        "images/archer-t2ub-nano_front.png",
+      imageUrl: "images/archer-t2ub-nano_front.png",
       productUrl: "Archer-T2UB-Nano.html",
     },
     {
       name: "Archer T2U",
       description:
         "Adaptador USB Wi-Fi AC600 de doble banda. Disfruta de streaming HD y juegos en línea sin lag.",
-      imageUrl:
-        "images/archer-t2u_front.jpg",
+      imageUrl: "images/archer-t2u_front.jpg",
       productUrl: "ARCHER-T2U.html",
     },
     {
       name: "Archer T2U Plus",
       description:
         "Adaptador Wi-Fi de alta ganancia. Su antena potente mejora la recepción para una señal más estable.",
-      imageUrl:
-        "images/archer-t2u-plus_front.jpg",
+      imageUrl: "images/archer-t2u-plus_front.jpg",
       productUrl: "ArcherT2UPlus.html",
     },
     {
       name: "Archer T3U Nano",
       description:
         "Adaptador Wi-Fi AC1300 de tamaño nano. Velocidad y rendimiento superior en un diseño ultra compacto.",
-      imageUrl:
-        "images/archer-t3u-nano_front.jpg",
+      imageUrl: "images/archer-t3u-nano_front.jpg",
       productUrl: "Archer-T3U-Nano.html",
     },
     {
       name: "Archer T4U",
       description:
         "Adaptador USB 3.0 Wi-Fi AC1300. Transfiere datos a velocidades ultra rápidas para un rendimiento máximo.",
-      imageUrl:
-        "images/archer-t4u_front.jpg",
+      imageUrl: "images/archer-t4u_front.jpg",
       productUrl: "Archer-T4U.html",
     },
     {
       name: "Archer T4U Plus",
       description:
         "Adaptador Wi-Fi de alta ganancia con dos antenas. Cobertura flexible y ampliada para tu escritorio.",
-      imageUrl:
-        "images/archer-t4u-plus_front.jpg",
+      imageUrl: "images/archer-t4u-plus_front.jpg",
       productUrl: "Archer-T4U-Plus.html",
     },
     {
       name: "Archer T4E",
       description:
         "Adaptador PCIe Wi-Fi AC1200. Instálalo en tu PC de escritorio para una conexión inalámbrica de alta velocidad.",
-      imageUrl:
-        "images/archert4e_front.webp",
+      imageUrl: "images/archert4e_front.webp",
       productUrl: "ArcherT4E.html",
     },
     {
       name: "Archer TX20UH",
       description:
         "Adaptador USB Wi-Fi 6 AX1800 de alta ganancia. Potencia tu conexión con la última tecnología Wi-Fi.",
-      imageUrl:
-        "images/archer-tx20uh_front.jpg",
+      imageUrl: "images/archer-tx20uh_front.jpg",
       productUrl: "Archer-TX20UH.html",
     },
     {
       name: "Archer TX55E",
       description:
         "Adaptador PCIe con Wi-Fi 6 y Bluetooth 5.2. La actualización definitiva para juegos y streaming.",
-      imageUrl:
-        "images/archer-tx55e_front.jpg",
+      imageUrl: "images/archer-tx55e_front.jpg",
       productUrl: "Archer-TX55E.html",
     },
 
@@ -97,56 +86,49 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Archer C24",
       description:
         "Router Wi-Fi AC750 de doble banda. Compacto, fiable y perfecto para el streaming y la navegación diaria.",
-      imageUrl:
-        "images/archerc24_front.jpg",
+      imageUrl: "images/archerc24_front.jpg",
       productUrl: "ArcherC24.html",
     },
     {
       name: "Archer C50",
       description:
         "Router inalámbrico Wi-Fi AC1200. Una solución robusta para hogares con múltiples dispositivos conectados.",
-      imageUrl:
-        "images/archer-c50_front.jpg",
+      imageUrl: "images/archer-c50_front.jpg",
       productUrl: "ARCHER-C50.html",
     },
     {
       name: "Archer C6",
       description:
         "Router Gigabit Wi-Fi AC1200 MU-MIMO. Optimizado para un rendimiento superior y cobertura completa.",
-      imageUrl:
-        "images/archerc6_front.jpg",
+      imageUrl: "images/archerc6_front.jpg",
       productUrl: "ArcherC6.html",
     },
     {
       name: "Archer C80",
       description:
         "Router Wi-Fi AC1900 MU-MIMO. Alto rendimiento para juegos, streaming 4K y conexiones exigentes.",
-      imageUrl:
-        "images/archerc80_front.jpg",
+      imageUrl: "images/archerc80_front.jpg",
       productUrl: "ArcherC80.html",
     },
     {
       name: "Archer AX10",
       description:
         "Router Wi-Fi 6 AX1500. Entra al mundo del Wi-Fi 6 con velocidades más rápidas y mayor capacidad.",
-      imageUrl:
-        "images/archerax10_front.jpg",
+      imageUrl: "images/archerax10_front.jpg",
       productUrl: "ArcherAX10.html",
     },
     {
       name: "Archer MR400",
       description:
         "Router 4G+ Cat6 Wi-Fi AC1200. Comparte tu red 4G LTE en cualquier lugar con una simple tarjeta SIM.",
-      imageUrl:
-        "images/archermr400apac_front.jpg",
+      imageUrl: "images/archermr400apac_front.jpg",
       productUrl: "ArcherMR400-V4.30.html",
     },
     {
       name: "Archer AXE75",
       description:
         "Router Wi-Fi 6E AXE5400. Explora la nueva banda de 6 GHz para un streaming sin congestión.",
-      imageUrl:
-        "images/archer-axe75_front.jpg",
+      imageUrl: "images/archer-axe75_front.jpg",
       productUrl: "Archer-AXE75.html",
     },
 
@@ -155,48 +137,42 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Mercusys MS105G",
       description:
         "Switch de escritorio con 5 puertos Gigabit. Expande tu red cableada con velocidad y simplicidad.",
-      imageUrl:
-        "images/ms105g_front.jpg",
+      imageUrl: "images/ms105g_front.jpg",
       productUrl: "MS105G.html",
     },
     {
       name: "Mercusys MW302R",
       description:
         "Router inalámbrico N300 Multi-Modo. Un dispositivo versátil para todas tus necesidades de red básicas.",
-      imageUrl:
-        "images/mw302r_front.jpg",
+      imageUrl: "images/mw302r_front.jpg",
       productUrl: "MW302R.html",
     },
     {
       name: "Mercusys MW300RE",
       description:
         "Extensor de rango Wi-Fi N300. Elimina las zonas muertas y lleva la señal a cada rincón de tu hogar.",
-      imageUrl:
-        "images/mw300re_front.jpg",
+      imageUrl: "images/mw300re_front.jpg",
       productUrl: "MW300RE.html",
     },
     {
       name: "Mercusys MS108G",
       description:
         "Switch de escritorio con 8 puertos Gigabit. Ideal para transferencias de archivos rápidas en casa o la oficina.",
-      imageUrl:
-        "images/ms108g_front.webp",
+      imageUrl: "images/ms108g_front.webp",
       productUrl: "MS108G.html",
     },
     {
       name: "Mercusys MW306R",
       description:
         "Router inalámbrico N300 con antenas de alta ganancia para una cobertura Wi-Fi mejorada.",
-      imageUrl:
-        "images/mw306r_front.jpg",
+      imageUrl: "images/mw306r_front.jpg",
       productUrl: "MW306R.html",
     },
     {
       name: "Mercusys ME30",
       description:
         "Extensor de rango Wi-Fi AC1200. Expande tu red de doble banda para un streaming y juegos fluidos.",
-      imageUrl:
-        "images/me30_front.jpg",
+      imageUrl: "images/me30_front.jpg",
       productUrl: "ME30.html",
     },
 
@@ -205,64 +181,151 @@ document.addEventListener("DOMContentLoaded", function () {
       name: "Mercusys MR30G",
       description:
         "Router Gigabit Wi-Fi AC1200. Velocidades de doble banda para un entretenimiento en línea sin interrupciones.",
-      imageUrl:
-        "images/mr30g_front.jpg",
+      imageUrl: "images/mr30g_front.jpg",
       productUrl: "MR30G.html",
     },
     {
       name: "Mercusys MR50G",
       description:
         "Router Gigabit Wi-Fi AC1900. Potencia y velocidad para hogares con alta demanda de conexión.",
-      imageUrl:
-        "images/mr50g_front.jpg",
+      imageUrl: "images/mr50g_front.jpg",
       productUrl: "MR50G.html",
     },
     {
       name: "Mercusys AC12G",
       description:
         "Router Gigabit Wi-Fi AC1200 de doble banda. Conexión estable y rápida para todos tus dispositivos.",
-      imageUrl:
-        "images/ac12g_front.jpg",
+      imageUrl: "images/ac12g_front.jpg",
       productUrl: "AC12G.html",
     },
     {
       name: "Mercusys MR60X",
       description:
         "Router Wi-Fi 6 AX1500. Actualiza tu hogar a la nueva generación de Wi-Fi con más velocidad y capacidad.",
-      imageUrl:
-        "images/mr60x_front.jpg",
+      imageUrl: "images/mr60x_front.jpg",
       productUrl: "MR60X.html",
     },
     {
       name: "Mercusys MR80X",
       description:
         "Router Wi-Fi 6 AX3000 de doble banda. Rendimiento excepcional para juegos, streaming y el hogar inteligente.",
-      imageUrl:
-        "images/mr80x_front.jpg",
+      imageUrl: "images/mr80x_front.jpg",
       productUrl: "MR80X.html",
     },
 
-    // Sistemas Mesh
+    // Sistemas Mesh Halo
     {
       name: "Halo H30G (3-pack)",
       description:
         "Sistema Wi-Fi Mesh AC1300 para todo el hogar. Cobertura unificada y sin interrupciones en cada rincón.",
-      imageUrl:
-        "images/halo-h30g(3-pack)_front.jpg",
+      imageUrl: "images/halo-h30g(3-pack)_front.jpg",
       productUrl: "Halo-H30G(3-pack).html",
     },
     {
       name: "Halo H50G (3-pack)",
       description:
         "Sistema Wi-Fi Mesh AC1900 de alta velocidad. Cubre hasta 550 m² con una red Wi-Fi potente y estable.",
-      imageUrl:
-        "images/haloh50g3-pack_front.jpg",
+      imageUrl: "images/haloh50g3-pack_front.jpg",
       productUrl: "HaloH50G3-pack.html",
+    },
+
+    // --- NUEVOS PRODUCTOS DECO ---
+    // Sistemas Mesh Deco
+    {
+      name: "Deco E4 (2-pack)",
+      description:
+        "Sistema Wi-Fi Mesh AC1200. La forma más sencilla de garantizar una señal Wi-Fi potente en cada rincón de tu hogar.",
+      imageUrl: "images/decoe42-pack_front.jpg",
+      productUrl: "DecoE42-pack.html",
+    },
+    {
+      name: "Deco E4 (3-pack)",
+      description:
+        "Pack de 3 unidades Mesh Wi-Fi AC1200. Elimina las zonas sin cobertura en casas grandes con una red única y estable.",
+      imageUrl: "images/decoe43-pack_front.jpg",
+      productUrl: "DecoE43-pack.html",
+    },
+    {
+      name: "Deco S7 (2-pack)",
+      description:
+        "Sistema Wi-Fi Mesh AC1900 de alta velocidad. Conecta más de 100 dispositivos sin perder rendimiento.",
+      imageUrl: "images/deco-s7(2-pack)_front.webp",
+      productUrl: "DECO-S7(2-PACK).html",
+    },
+    {
+      name: "Deco S7 (3-pack)",
+      description:
+        "Pack de 3 unidades Mesh Wi-Fi AC1900. Cobertura extensiva y velocidades rápidas para streaming 4K y juegos.",
+      imageUrl: "images/deco-s7(3-pack)_front.jpg",
+      productUrl: "DECO-S7(3-PACK).html",
+    },
+    {
+      name: "Deco M4 (3-pack)",
+      description:
+        "Sistema Mesh Wi-Fi AC1200 con un diseño elegante. Proporciona conexiones rápidas y estables en áreas de hasta 510 m².",
+      imageUrl: "images/deco-m4(3-pack)_front.jpg",
+      productUrl: "Deco-M4(3-pack).html",
+    },
+    {
+      name: "Deco M5 (2-pack)",
+      description:
+        "Sistema Wi-Fi Mesh con seguridad HomeCare integrada. Protege tu red y disfruta de una cobertura total.",
+      imageUrl: "images/deco-m5(2-pack)_front.webp",
+      productUrl: "DECO-M5(2-PACK).html",
+    },
+    {
+      name: "Deco M5 (3-pack)",
+      description:
+        "Pack de 3 unidades Mesh AC1300 con antivirus y control parental. Cobertura segura para toda la familia.",
+      imageUrl: "images/deco-m5(3-pack)_front.jpg",
+      productUrl: "DECO-M5(3-PACK).html",
+    },
+    {
+      name: "Deco X10 (3-pack)",
+      description:
+        "Sistema Mesh Wi-Fi 6 AX1500. Entra en la nueva era del Wi-Fi con más velocidad, capacidad y menos latencia.",
+      imageUrl: "images/deco-x10(3-pack)_front.jpg",
+      productUrl: "Deco-X10(3-pack).html",
+    },
+    {
+      name: "Deco X55 (2-pack)",
+      description:
+        "Sistema Mesh Wi-Fi 6 AX3000 ultrarrápido. Ideal para streaming en 8K y juegos de realidad virtual sin interrupciones.",
+      imageUrl: "images/deco-x55(2-pack)_front.jpg",
+      productUrl: "Deco-X55(2-pack).html",
+    },
+    {
+      name: "Deco X55 (3-pack)",
+      description:
+        "Pack de 3 unidades Mesh Wi-Fi 6 AX3000. Cobertura masiva con la última tecnología para hogares inteligentes y exigentes.",
+      imageUrl: "images/deco-x55(3-pack)_front.png",
+      productUrl: "Deco-X55(3-pack).html",
+    },
+    {
+      name: "Deco X50 (3-pack)",
+      description:
+        "Sistema Mesh Wi-Fi 6 AX3000. Cobertura total y velocidades de gigabit para conectar todos tus dispositivos.",
+      imageUrl: "images/deco-x50(3-pack)_front.jpg",
+      productUrl: "Deco-X50(3-pack).html",
+    },
+    {
+      name: "Deco X50-PoE (2-pack)",
+      description:
+        "Sistema Mesh Wi-Fi 6 AX3000 con alimentación PoE. Instalación flexible en techos o paredes sin necesidad de enchufe.",
+      imageUrl: "images/deco-x50-poe(2-pack)_front.jpg",
+      productUrl: "Deco-X50-PoE(2-pack).html",
+    },
+    {
+      name: "Deco BE25 (2-pack)",
+      description:
+        "Sistema Mesh Wi-Fi 7 BE5000. La vanguardia de la conectividad, con velocidades y capacidad sin precedentes.",
+      imageUrl: "images/deco-be25(2-pack)_front.webp",
+      productUrl: "Deco-BE25(2-pack).html",
     },
   ];
 
   // --- 2. CONFIGURACIÓN DE LA PAGINACIÓN ---
-  const productsPerPage = 12; // Cambia este número para mostrar más o menos productos por página
+  const productsPerPage = 12; // Mantenemos 12 productos por página. Con 44 productos, esto crea 4 páginas.
   let currentPage = 1;
 
   const productGrid = document.getElementById("product-grid");
