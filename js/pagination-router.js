@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "Router 4G+ Cat6 Wi-Fi AC1200. Comparte tu red 4G LTE en cualquier lugar con una simple tarjeta SIM.",
       imageUrl: "images/archermr400apac_front.jpg",
-      productUrl: "ArcherMR400-V4.30.html",
+      productUrl: "Archer-MR400-V4.30.html",
     },
     {
       name: "Archer AXE75",
@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "Pack de 3 unidades Mesh Wi-Fi AC1900. Cobertura extensiva y velocidades rápidas para streaming 4K y juegos.",
       imageUrl: "images/deco-s7(3-pack)_front.jpg",
-      productUrl: "DECO-S7(3-PACK).html",
+      productUrl: "DECO-S7(3- PACK).html",
     },
     {
       name: "Deco M4 (3-pack)",
@@ -321,6 +321,35 @@ document.addEventListener("DOMContentLoaded", function () {
         "Sistema Mesh Wi-Fi 7 BE5000. La vanguardia de la conectividad, con velocidades y capacidad sin precedentes.",
       imageUrl: "images/deco-be25(2-pack)_front.webp",
       productUrl: "Deco-BE25(2-pack).html",
+    },
+    // Routers y extensores
+    {
+      name: "TP-Link RE200",
+      description:
+        "Extiende la cobertura de tu red con velocidad Wi-Fi 5. Ideal para eliminar zonas muertas en tu hogar u oficina.",
+      imageUrl: "images/re200_front.jpg",
+      productUrl: "RE200.html",
+    },
+    {
+      name: "TP-Link RE205",
+      description:
+        "Mejora tu conexión inalámbrica con este extensor de rango Wi-Fi 5. Rápido, confiable y fácil de instalar.",
+      imageUrl: "images/re205_front.jpg",
+      productUrl: "RE205.html",
+    },
+    {
+      name: "TP-Link TL-WR840N",
+      description:
+        "Enrutador inalámbrico de 2.4 GHz perfecto para tareas diarias como navegación, streaming y videollamadas.",
+      imageUrl: "images/tl-wr840n_front.jpg",
+      productUrl: "TL-WR840N.html",
+    },
+    {
+      name: "TP-Link TL-MR6400 V3",
+      description:
+        "Conéctate donde sea con este enrutador inalámbrico 4G LTE. Solo inserta una SIM y disfruta de Internet sin cables.",
+      imageUrl: "images/tl-mr6400apac_front.jpg",
+      productUrl: "TL-MR6400APAC.html",
     },
   ];
 
