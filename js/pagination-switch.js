@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Switch de escritorio con 8 puertos 10/100Mbps. Ideal para expandir redes cableadas en hogares u oficinas pequeñas.",
       imageUrl: "images/tl-sf1008d_front.jpg",
       pageUrl: "TL-SF1008D.html",
-      price: null,
+      price: 13.0,
     },
     {
       model: "TP-Link LiteWave LS1005G",
@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Conmutador no gestionable de 5 puertos Gigabit. Aumenta la velocidad de tu red con tecnología Plug and Play.",
       imageUrl: "images/ls1005g_front.jpg",
       pageUrl: "LS1005G.html",
-      price: null,
+      price: 15.5,
     },
     {
       model: "TP-Link TL-SG1008D",
@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Switch no gestionable de 5 puertos Gigabit con carcasa de acero y diseño Plug and Play.",
       imageUrl: "images/ls105g_front.jpg",
       pageUrl: "LS105G.html",
-      price: null,
+      price: 17.9,
     },
     {
       model: "TP-Link TL-SG1005D",
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Switch de escritorio con 5 puertos Gigabit. Una forma sencilla y económica de acelerar tu red doméstica.",
       imageUrl: "images/tl-sg1005d_front.jpg",
       pageUrl: "TL-SG1005D.html",
-      price: null,
+      price: 18.5,
     },
     {
       model: "TP-Link LiteWave LS1008G",
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "Conmutador de 8 puertos Gigabit no gestionable. Aumenta la capacidad de tu red con la serie LiteWave.",
       imageUrl: "images/ls1008g_front.jpg",
       pageUrl: "LS1008G.html",
-      price: null,
+      price: 24.9,
     },
     {
       model: "TP-Link LiteWave LS108G",
